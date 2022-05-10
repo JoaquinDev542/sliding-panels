@@ -27,10 +27,15 @@ img {
     height: 40px;
     background-color: #fff;
     border-radius: 50%;
+    z-index: 20;
 }
 
 .list {
     display: none;
+}
+
+.list.active {
+    display: block;
 }
 
 .projects {
@@ -40,6 +45,11 @@ img {
     justify-content: center;
     height: 100vh;
     cursor: pointer;
+    /* display: inline; cuando quiero seleccionar 1 solo */
+}
+
+.projects.active {
+    display: none;
 }
 
 .project {
@@ -49,6 +59,8 @@ img {
 
 .project:hover .project__plusIcon {
     opacity: 1;
+    transform: scale(1);
+
 }
 
 .project--first , .project--second , .project--third , .project--fourth {
@@ -56,24 +68,27 @@ img {
     background-position: center;
     background-size: cover;
     filter: grayscale(100%);
+    transition: filter .3s ;
+}
+
+.project--first:hover , .project--second:hover , .project--third:hover , .project--fourth:hover{
+    filter: grayscale(0%);
 }
 
 .project--first {
-    background-image:   url(../assets/image/img/bird.jpeg);
-    /* opacity: .3; */
-    /* filter: brightness(.5) */
+    background-image: url(../assets/image/img/bird.jpeg);
 }
 
 .project--second {
-    background-image:  url(../assets/image/img/deer.jpeg);
+    background-image: url(../assets/image/img/deer.jpeg);
 }
 
 .project--third {
-    background-image :   url(../assets/image/img/redBird.jpeg);
+    background-image : url(../assets/image/img/redBird.jpeg);
 }
 
 .project--fourth {
-    background-image:   url(../assets/image/img/chameleon.jpeg);
+    background-image: url(../assets/image/img/chameleon.jpeg);
 }
 
 .project__content {
@@ -96,13 +111,15 @@ img {
 .project__paragraph {
     margin: 0 ;
     width: 90%;
-    color: #ffffff96;
+    color: #ffffffe1;
     letter-spacing: 1px;
     line-height: 1.5;
 }
 
 .project__plusIcon {
     opacity: 0;
+    transform: scale(0);
+    transition: .3s all;
 }
 
 .information {
