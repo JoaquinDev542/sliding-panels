@@ -36,6 +36,26 @@ img {
 
 .list.active {
     display: block;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1418;
+}
+
+.list__item {
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* left: 0; */
+    /* width: 100%; */
+    /* margin: 10px; */
+
+    /* BAJAR EL CONTENIDO ABAJO AUMENTAR TAMAÑO CON UN BORDERBOTTOM 1px COLOR GRIS MAS TRANSISION Y CAMBIAR IMAGEN DE MENU A FLECHA ABAJO  */
+
+}
+
+.list__link {
+    color: #fff;
+    text-decoration: none;
 }
 
 .projects {
