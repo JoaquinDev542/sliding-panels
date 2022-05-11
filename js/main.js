@@ -1,6 +1,8 @@
 const $toggleButton = document.querySelector(".toggleButton");
 const $list = document.querySelector(".list");
 
+const $toggleButtonImg = document.querySelector(".toggleButton__img");
+
 const $projects = document.querySelector(".projects");
 
 const $projectFirst = document.querySelector(".project--first");
@@ -15,11 +17,20 @@ const $information = document.querySelector(".information");
             $projects.classList.toggle("active");
             $list.classList.toggle("active");
 
-            
-
+            toggleButtonImgChangeFunction();
         })
     }
     toggleButtonFunction();
+
+    const toggleButtonImgChangeFunction = function () {
+        // $toggleButtonImg
+        $toggleButtonImg.src = "assets/image/icons/close_black_24dp.svg";
+    }
+
+    // const toggleButtonImgBackFunction = function () {
+    //     $toggleButtonImg.src = "assets/image/icons/menu_black_24dp.svg";
+    // }
+    // toggleButtonImgBackFunction();
 
     // const goToProjectsFunction = function () {
     //     $projectFirst.addEventListener("click" , () => {
@@ -34,6 +45,5 @@ const $information = document.querySelector(".information");
     // goToProjectsFunction();
 
 
-// Acomodar Código , eliminar imagen dentro de information , ::root
+//  eliminar imagen dentro de information , ::root
 
-{/* <img src="assets/image/icons/menu_black_24dp.svg" alt="Icon hamburger menu" class="toggleButon__img"> */}

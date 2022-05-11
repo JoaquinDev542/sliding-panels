@@ -1,3 +1,14 @@
+:root {
+    --white: #fff;
+    --black:;
+
+    --clr-border-link:#31363a;
+    --clr-bg-menu:#0d1418;
+    --clr-paragraph:#ffffffe1;
+
+    --transition-time:.3s;
+}
+
 * , ::before , ::after {
     box-sizing: border-box;
 }
@@ -25,7 +36,7 @@ img {
     right: 20px ;
     width: 40px ;
     height: 40px;
-    background-color: #fff;
+    background-color: var(--white , #fff);
     border-radius: 50%;
     z-index: 20;
 }
@@ -43,8 +54,8 @@ img {
     position: relative;
     font-size: 2.5rem;
     text-decoration: none;
-    border-bottom: 1px solid #31363a;
-    color: #fff;
+    border-bottom: 1px solid var(--clr-border-link , #31363a);
+    color: var(--white , #fff);
     transition: .3s border-bottom;
 }
 
@@ -67,12 +78,16 @@ img {
     background-position: center;
     background-size: cover;
     filter: grayscale(100%);
-    transition: filter .3s ;
+    transition: filter var(--transition-time , .3s) ;
 }
 
 .project--first {
     background-image: url(../assets/image/img/bird.jpeg);
 }
+
+/* .project--second.active , .project--third.active ,.project--fourth.active  {
+    display: none;
+} */
 
 .project--second {
     background-image: url(../assets/image/img/deer.jpeg);
@@ -100,13 +115,13 @@ img {
 .project__title {
     margin: 20px 0 0 0;
     font-size: 1.25rem;
-    color: #fff;
+    color: var(--white , #fff);
 }
 
 .project__paragraph {
     margin: 0 ;
     width: 90%;
-    color: #ffffffe1;
+    color: var(--clr-paragraph , #ffffffe1);
     letter-spacing: 1px;
     line-height: 1.5;
 }
@@ -114,7 +129,7 @@ img {
 .project__plusIcon {
     opacity: 0;
     transform: scale(0);
-    transition: .3s all;
+    transition: var(--transition-time , .3s) all;
 }
 
 .information {
@@ -136,7 +151,7 @@ img {
 @media screen and (hover:hover) {
 
     .list__link:hover {
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid var(--white , #fff);
     }
 
     .project:hover .project__plusIcon {
@@ -159,13 +174,13 @@ img {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #0d1418;
+    background-color: var(--clr-bg-menu , #0d1418);
 }
 
 .projects.active {
     display: none;
 }
 
-/* .information.active {
+.information.active {
     display: block;
-} */
+}
