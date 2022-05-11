@@ -54,19 +54,19 @@ const $information = document.querySelector(".information");
         $toggleButtonImg.src = "assets/image/icons/menu_black_24dp.svg";
     }
 
-    const goToProjectsFunction = function () {
-        $projectFirst.addEventListener("click" , () => {
-            $information.classList.add("active");
+    // const goToProjectsFunction = function () {
+    //     $projectFirst.addEventListener("click" , () => {
+    //         $information.classList.add("active");
 
-            $projectSecond.classList.add("active");
-            $projectThird.classList.add("active");
-            $projectFourth.classList.add("active");
+    //         $projectSecond.classList.add("active");
+    //         $projectThird.classList.add("active");
+    //         $projectFourth.classList.add("active");
 
-            $projectContent.classList.add("active");
+    //         $projectContent.classList.add("active");
 
-        })
-    }
-    goToProjectsFunction();
+    //     })
+    // }
+    // goToProjectsFunction();
 
 
 //  eliminar imagen dentro de information , acomodar código html,js 
