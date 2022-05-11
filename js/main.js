@@ -28,43 +28,45 @@ const $information = document.querySelector(".information");
             $projects.classList.toggle("active");
             $list.classList.toggle("active");
 
-            // toggleButtonImgChangeFunction();
-            // toggleButtonImgBackFunction();
+            toggleButtonImgChangeFunction();            
 
         })
     }
     toggleButtonFunction();
 
-    
-
 // FUNCTION  
-    // const toggleButtonImgChangeFunction = function () {
-    
-    //     $toggleButtonImg.src = "assets/image/icons/close_black_24dp.svg";
+    const toggleButtonImgChangeFunction = function () {
+        $toggleButtonImg.src = "assets/image/icons/close_black_24dp.svg";
+    }
+
+    // const toggleButtonImgBackFunction = function () {
+    //     $toggleButton.src ="assets/image/icons/menu_black_24dp.svg";
     // }
+    // toggleButtonImgBackFunction();
+
+
 
     // $toggleButtonImg.addEventListener("click" , () => {
     //     $toggleButtonImg.src = "assets/image/icons/menu_black_24dp.svg";
     // })
 
-    // const toggleButtonImgBackFunction = function () {
-    //     $toggleButtonImg.src = "assets/image/icons/menu_black_24dp.svg";
-    // }
+    const toggleButtonImgBackFunction = function () {
+        $toggleButtonImg.src = "assets/image/icons/menu_black_24dp.svg";
+    }
 
-    // const goToProjectsFunction = function () {
-    //     $projectFirst.addEventListener("click" , () => {
-    //         $information.classList.add("active");
+    const goToProjectsFunction = function () {
+        $projectFirst.addEventListener("click" , () => {
+            $information.classList.add("active");
 
-    //         $projectSecond.classList.add("active");
-    //         $projectThird.classList.add("active");
-    //         $projectFourth.classList.add("active");
+            $projectSecond.classList.add("active");
+            $projectThird.classList.add("active");
+            $projectFourth.classList.add("active");
 
-    //         $projectContent.classList.add("active");
+            $projectContent.classList.add("active");
 
-    //     })
-    // }
-    // goToProjectsFunction();
+        })
+    }
+    goToProjectsFunction();
 
 
 //  eliminar imagen dentro de information , acomodar código html,js 
-
