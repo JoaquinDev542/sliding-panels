@@ -1,6 +1,5 @@
 :root {
     --white: #fff;
-    --black:;
 
     --clr-border-link:#31363a;
     --clr-bg-menu:#0d1418;
@@ -23,7 +22,7 @@ img {
     display: block;
     max-width: 100%;
 }
-
+/* Header Section */
 .nav {
     position: relative;
 }
@@ -40,7 +39,7 @@ img {
     border-radius: 50%;
     z-index: 20;
 }
-
+/* List Section */
 .list {
     display: none;
 }
@@ -58,7 +57,7 @@ img {
     color: var(--white , #fff);
     transition: .3s border-bottom;
 }
-
+/* Projects Section */
 .projects {
     display: flex;
     flex-direction: column;
@@ -85,10 +84,6 @@ img {
     background-image: url(../assets/image/img/bird.jpeg);
 }
 
-/* .project--second.active , .project--third.active ,.project--fourth.active  {
-    display: none;
-} */
-
 .project--second {
     background-image: url(../assets/image/img/deer.jpeg);
 }
@@ -100,7 +95,7 @@ img {
 .project--fourth {
     background-image: url(../assets/image/img/chameleon.jpeg);
 }
-
+/* Project Content Section */
 .project__content {
     height: 100%;
     display: flex;
@@ -131,11 +126,12 @@ img {
     transform: scale(0);
     transition: var(--transition-time , .3s) all;
 }
-
+/* Information Section */
 .information {
     display: none;
 }
 
+/* Media Screen  MIN-WIDTH */
 @media screen and (min-width:768px) {
 
     .projects {
@@ -147,7 +143,7 @@ img {
     }
 
 }
-
+/* Media Screen HOVER */
 @media screen and (hover:hover) {
 
     .list__link:hover {
@@ -164,7 +160,6 @@ img {
     }
 
 }
-
 /* Active Section */
 .list.active {
     display: flex;
@@ -178,6 +173,14 @@ img {
 }
 
 .projects.active {
+    display: none;
+}
+
+.project--second.active , .project--third.active ,.project--fourth.active  {
+    display: none;
+}
+
+.project__content.active {
     display: none;
 }
 
