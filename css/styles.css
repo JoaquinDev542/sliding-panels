@@ -34,28 +34,18 @@ img {
     display: none;
 }
 
-.list.active {
-    display: block;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: #0d1418;
-}
-
 .list__item {
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* left: 0; */
-    /* width: 100%; */
-    /* margin: 10px; */
-
-    /* BAJAR EL CONTENIDO ABAJO AUMENTAR TAMAÑO CON UN BORDERBOTTOM 1px COLOR GRIS MAS TRANSISION Y CAMBIAR IMAGEN DE MENU A FLECHA ABAJO  */
-
+    padding-left: 20px;
+    padding-bottom: 15px;
 }
 
 .list__link {
-    color: #fff;
+    position: relative;
+    font-size: 2.5rem;
     text-decoration: none;
+    border-bottom: 1px solid #31363a;
+    color: #fff;
+    transition: .3s border-bottom;
 }
 
 .projects {
@@ -65,22 +55,11 @@ img {
     justify-content: center;
     height: 100vh;
     cursor: pointer;
-    /* display: inline; cuando quiero seleccionar 1 solo */
-}
-
-.projects.active {
-    display: none;
 }
 
 .project {
     width: 100%;
     height: 100vh;
-}
-
-.project:hover .project__plusIcon {
-    opacity: 1;
-    transform: scale(1);
-
 }
 
 .project--first , .project--second , .project--third , .project--fourth {
@@ -89,10 +68,6 @@ img {
     background-size: cover;
     filter: grayscale(100%);
     transition: filter .3s ;
-}
-
-.project--first:hover , .project--second:hover , .project--third:hover , .project--fourth:hover{
-    filter: grayscale(0%);
 }
 
 .project--first {
@@ -157,3 +132,40 @@ img {
     }
 
 }
+
+@media screen and (hover:hover) {
+
+    .list__link:hover {
+        border-bottom: 1px solid #fff;
+    }
+
+    .project:hover .project__plusIcon {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .project--first:hover , .project--second:hover , .project--third:hover , .project--fourth:hover{
+        filter: grayscale(0%);
+    }
+
+}
+
+/* Active Section */
+.list.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1418;
+}
+
+.projects.active {
+    display: none;
+}
+
+/* .information.active {
+    display: block;
+} */
