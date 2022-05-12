@@ -39,34 +39,5 @@ const $information = document.querySelector(".information");
         $toggleButtonImg.src = "assets/image/icons/close_black_24dp.svg";
     }
 
-    // const toggleButtonImgBackFunction = function () {
-    //     $toggleButton.src ="assets/image/icons/menu_black_24dp.svg";
-    // }
-    // toggleButtonImgBackFunction();
-
-
-
-    // $toggleButtonImg.addEventListener("click" , () => {
-    //     $toggleButtonImg.src = "assets/image/icons/menu_black_24dp.svg";
-    // })
-
-    const toggleButtonImgBackFunction = function () {
-        $toggleButtonImg.src = "assets/image/icons/menu_black_24dp.svg";
-    }
-
-    // const goToProjectsFunction = function () {
-    //     $projectFirst.addEventListener("click" , () => {
-    //         $information.classList.add("active");
-
-    //         $projectSecond.classList.add("active");
-    //         $projectThird.classList.add("active");
-    //         $projectFourth.classList.add("active");
-
-    //         $projectContent.classList.add("active");
-
-    //     })
-    // }
-    // goToProjectsFunction();
-
 
 //  eliminar imagen dentro de information , acomodar código html,js 

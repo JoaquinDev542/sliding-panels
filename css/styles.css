@@ -131,7 +131,7 @@ img {
     display: none;
 }
 
-/* Media Screen  MIN-WIDTH */
+/* Media Screen  MIN-WIDTH:768px */
 @media screen and (min-width:768px) {
 
     .projects {
@@ -142,7 +142,25 @@ img {
         font-size: 1.5rem;
     }
 
+    .list__link {
+        font-size: 4rem;
+    }
+
 }
+
+/* Media Screen MIN-WIDTH:1024px */
+@media screen and (min-width:1024px) {
+    
+    .project__title {
+        font-size: 2rem;
+    }
+
+    .project__paragraph {
+        font-size: 1.25rem;
+    }
+
+}
+
 /* Media Screen HOVER */
 @media screen and (hover:hover) {
 
