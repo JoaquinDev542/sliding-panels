@@ -52,8 +52,14 @@ const $information = document.querySelector(".information");
             $projectInfo.classList.add("active");
             $projectSubtitle.classList.add("active");
         })
+
+        $projectSecond.addEventListener("click" , ()=> {
+            $projectFirst.classList.toggle("active");
+            $projectThird.classList.add("active");
+            $projectFourth.classList.add("active");
+        })
     }
     openProjectsFunction();
 
 
-//  eliminar imagen dentro de information , acomodar código html,js 
+//  ARREGLAR
