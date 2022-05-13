@@ -10,14 +10,17 @@ const $toggleButtonImg = document.querySelector(".toggleButton__img");
 // Projects
 const $projects = document.querySelector(".projects");
 
-// ProjectContent
-const $projectContent = document.querySelector(".project__content");
+// ProjectInfo
+const $projectInfo = document.querySelector(".project__info");
 
 // ProjectFirst / ProjectSecond / ProjectThird / ProjectFourth
 const $projectFirst = document.querySelector(".project--first");
 const $projectSecond = document.querySelector(".project--second");
 const $projectThird = document.querySelector(".project--third");
 const $projectFourth = document.querySelector(".project--fourth");
+
+// Project Subtitle
+const $projectSubtitle = document.querySelector(".project__subtitle");
 
 // Information
 const $information = document.querySelector(".information");
@@ -38,6 +41,19 @@ const $information = document.querySelector(".information");
     const toggleButtonImgChangeFunction = function () {
         $toggleButtonImg.src = "assets/image/icons/close_black_24dp.svg";
     }
+
+    const openProjectsFunction = function () {
+        $projectFirst.addEventListener("click" , ()=> {
+            $projectSecond.classList.add("active");
+            $projectThird.classList.add("active");
+            $projectFourth.classList.add("active");
+
+            $information.classList.add("active");
+            $projectInfo.classList.add("active");
+            $projectSubtitle.classList.add("active");
+        })
+    }
+    openProjectsFunction();
 
 
 //  eliminar imagen dentro de information , acomodar código html,js 
