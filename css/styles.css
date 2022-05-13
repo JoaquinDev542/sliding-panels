@@ -179,6 +179,8 @@ img {
         font-size: 1.25rem;
     }
 
+    .informat
+
 }
 
 /* Media Screen HOVER */
@@ -225,6 +227,7 @@ img {
 .information.active {
     display: block;
     width: 90%;
+    max-width: 900px;
     margin: 20px auto;
 }
 
@@ -233,8 +236,6 @@ img {
 }
 
 .information__paragraph {
-    /* width: 90%; */
-    /* margin: 0 auto 20px auto; */
     line-height: 1.5;
     color: var(--clr-information-paragraph , #737679);
 }
