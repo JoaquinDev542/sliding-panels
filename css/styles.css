@@ -216,9 +216,9 @@ img {
     display: none;
 }
 
-.project--second.active , .project--third.active ,.project--fourth.active  {
+/* .project--second.active , .project--third.active ,.project--fourth.active  {
     display: none;
-}
+} */
 
 .project__info.active {
     display: none;

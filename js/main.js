@@ -44,20 +44,20 @@ const $information = document.querySelector(".information");
 
     const openProjectsFunction = function () {
         $projectFirst.addEventListener("click" , ()=> {
-            $projectSecond.classList.add("active");
-            $projectThird.classList.add("active");
-            $projectFourth.classList.add("active");
+        //     $projectSecond.classList.add("active");
+        //     $projectThird.classList.add("active");
+        //     $projectFourth.classList.add("active");
 
-            $information.classList.add("active");
-            $projectInfo.classList.add("active");
-            $projectSubtitle.classList.add("active");
+        //     $information.classList.add("active");
+        //     $projectInfo.classList.add("active");
+        //     $projectSubtitle.classList.add("active");
         })
 
-        $projectSecond.addEventListener("click" , ()=> {
-            $projectFirst.classList.toggle("active");
-            $projectThird.classList.add("active");
-            $projectFourth.classList.add("active");
-        })
+        // $projectSecond.addEventListener("click" , ()=> {
+        //     $projectFirst.classList.toggle("active");
+        //     $projectThird.classList.add("active");
+        //     $projectFourth.classList.add("active");
+        // })
     }
     openProjectsFunction();
 
